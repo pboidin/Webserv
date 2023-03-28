@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  webserv:
+    build: container
+    tty: true
+    container_name: webserv
+    ports:
+      - 8080:8080
+      - 8081:8081
+    restart: unless-stopped
+    volumes:
+      - ./container/volume:/webserv

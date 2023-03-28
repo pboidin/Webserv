@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta charset="utf-8">
+    	<meta name="keywords" content>
+    	<meta name="description" content>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>WEBSERV</title>
+    </head>
+    <body>
+		<header>
+			<h1>WEB<span>SERV</span></h1>
+		</header>
+		<div class="container-button">
+			<div class="grid">
+				<div class="get">
+					<div class="title">
+						<h2>TRY <span>GET</span> METHOD</h2>
+					</div>
+					<div class="txt">
+						<h3>This is the <span>test</span> of GET !</h3>
+					</div>
+					<div class="btn">
+						<button href="hello-world.html" class="button" type="button" role="button" onclick="window.location.href = 'hello-world.html'">GET</button>
+
+					</div>
+				</div>
+				<div class="post">
+					<div class="title">
+						<h2>TRY <span>POST</span> METHOD</h2>
+					</div>
+					<form action="upload" method="POST" enctype="multipart/form-data">
+						<h3>Choose a <span>file</span> to import :</h3>
+						<input placeholder="Choose a file..." name="userfile" type="file" class="file"/>
+						<button type="submit" class ="submit" name="send" value="send">Send</button>
+					</form>
+					<form action="post.php" method="GET">
+						<h3>Please <span>complete</span> the form:</h3>
+						<input type="text" name="title" placeholder="A Title" /></br>
+						<input name="content" placeholder="A Description"/></br>
+						<input type="submit" class="submit" value="POST" />
+					</form>
+				</div>
+				<div class="delete">
+					<div class="title">
+						<h2>TRY <span>DELETE</span> METHOD</h2>
+					</div>
+					<div class="txt">
+						Click here to try Delete
+					</div>
+					<div class="btn">
+						<button href="delete.html" class="button" type="button" role="button" onclick="window.location.href = 'delete.html'">DELETE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-text">
+			Realized by:
+			<a href="https://profile.intra.42.fr/users/emcariot">Emma Cariot,</a>
+			<a href="https://profile.intra.42.fr/users/jpeyron">Jules Peyron</a>
+			et
+			<a href="https://profile.intra.42.fr/users/piboidin">Pierre-Louis Boidin</a>
+		</div>
+    </body>
+</html>
+
